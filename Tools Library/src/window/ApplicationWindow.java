@@ -72,6 +72,6 @@ public abstract class ApplicationWindow extends JFrame {
 	/**
 	 * Calls when the window closes.
 	 */
-	public void close() {}
+	protected void close() {}
 	
 }
