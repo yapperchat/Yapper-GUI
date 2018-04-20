@@ -56,14 +56,14 @@ public abstract class ApplicationWindow extends JFrame {
 	 * Tells if the window is running.
 	 * @return Returns true if the window is running.
 	 */
-	public boolean isRunning() {
+	public final boolean isRunning() {
 		return this.running;
 	}
 	
 	/**
 	 * Stops the window, closing it and activating its close() method.
 	 */
-	public void stop() {
+	public final void stop() {
 		this.running = false;
 		this.close();
 		this.dispose();
@@ -72,6 +72,6 @@ public abstract class ApplicationWindow extends JFrame {
 	/**
 	 * Calls when the window closes.
 	 */
-	protected void close() {}
+	protected abstract void close();
 	
 }
